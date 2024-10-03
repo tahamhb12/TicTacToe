@@ -10,8 +10,8 @@ const Winner = ({winner}) => {
             exit={{y:-500}}
             transition={{type:"just"}}
             className="winner">
-                <h2>Winner</h2>
-                <p>{winner}</p>
+                <h2>{winner == "Draw" ? "Draw":"Winner"}</h2>
+                <p>{winner == "Draw" ?"" :winner}</p>
             </motion.div>}
         </AnimatePresence>
      );

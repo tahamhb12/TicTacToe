@@ -65,7 +65,7 @@ if(start){
       }, 200); 
     }else if(Draw && !CrossWins && !CircleWins){
       setTimeout(() => {
-        alert("draw")
+        setwinner("Draw")
         setcells(defaultValues)     
       }, 200);       }
     })
