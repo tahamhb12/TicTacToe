@@ -1,0 +1,20 @@
+.winner{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    box-shadow: 7px 73px 242px -61px rgba(0,0,0,0.35) inset;
+    position: absolute;
+    top: 0;
+}
+.winner h2{
+    font-size: 90px;
+    opacity: 0.2;
+}
+.winner p{
+    font-size: 45px;
+    position: relative;
+    top: -78px;
+}
