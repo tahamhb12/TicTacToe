@@ -3,12 +3,18 @@
   --logo_color: black;
   --scoreBoard_color:#ebebeb;
   --cell_color: #eee;
+  --nav_button:black;
+  --tip_color:#ebebeb;
+  --black_to_white:black;
 }
 [data-theme="dark"]{
-  --body_background : black;
+  --body_background : #121212;
   --logo_color: white;
   --scoreBoard_color:#333;
   --cell_color: #222;
+  --nav_button:white;
+  --tip_color:var(--scoreBoard_color);
+  --black_to_white:white;
 }
 
 body {
@@ -67,7 +73,7 @@ body {
   position: absolute;
   top: 50px;
   left: 22px;
-  background-color: #ebebeb;
+  background-color: var(--scoreBoard_color);
   height: 40px;
   min-width: 80px;
   border-radius: 8px;
@@ -116,6 +122,7 @@ body {
   border-radius: 25px;
   background-color: var(--scoreBoard_color);
   position: relative;
+  color: var(--black_to_white);
 }
 .App .scoreboard::after{
   content: "";
@@ -173,6 +180,10 @@ body {
   background-color: #bbb;
   border-radius: 20px;
   font-size: 20px;
+}
+.header .buttons button {
+  background-color: transparent;
+  color: var(--nav_button);
 }
 .header .buttons .help {
   display: flex;

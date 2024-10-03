@@ -143,7 +143,10 @@ if(start){
           <i class="fa-solid fa-arrow-rotate-left"></i>
           <p className="tip" style={{width:"120px"}}>Reset Game</p>
           </button>
-        <button onClick={toggleLightMode}><i class="fa-solid fa-moon"></i></button>
+        <button onClick={toggleLightMode}>
+          {mode == "dark" ?<i class="fa-solid fa-moon"></i>: <i class="fa-solid fa-sun"></i>}
+            {mode == "light" ? <p style={{width:"120px"}} className="tip">Turnf off lights</p>:<p style={{width:"120px"}} className="tip">Turnf on lights</p>}
+        </button>
         <button><i class="fa-solid fa-volume-high"></i></button>
         <button onClick={()=>sethelp(true)}>
           <i class="fa-solid fa-question"></i>

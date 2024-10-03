@@ -8,6 +8,7 @@
     box-shadow: 7px 73px 242px -61px rgba(0,0,0,0.35) inset;
     position: absolute;
     top: 0;
+    color: var(--black_to_white);
 }
 .winner h2{
     font-size: 90px;
