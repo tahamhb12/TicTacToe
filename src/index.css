@@ -64,6 +64,8 @@ body {
   cursor: pointer;
   transition: .2s;
   position: relative;
+  background-color: transparent;
+  color: var(--nav_button);
 }
 .App .buttons button:hover{
   border: 4px cornflowerblue solid;
@@ -181,10 +183,6 @@ body {
   border-radius: 20px;
   font-size: 20px;
 }
-.header .buttons button {
-  background-color: transparent;
-  color: var(--nav_button);
-}
 .header .buttons .help {
   display: flex;
   flex-direction: column;
@@ -229,4 +227,46 @@ font-size: 16px;
   position: absolute;
   right: 15px;
   cursor: pointer;
+}
+.App .scoreboard img{
+  width: 180px;
+  height: 180px;
+  z-index: -10000;
+}
+.App .scoreboard img:first-child{
+  position: absolute;
+  top: -180px;
+  left: 10px;
+}
+.App .scoreboard img:nth-child(2){
+  position: absolute;
+  right: 10px;
+  top: -180px;
+}
+
+.App .scoreboard .edit_name1,
+.App .scoreboard .edit_name2{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .2s;
+  position: relative;
+  position: absolute;
+  color: var(--logo_color);
+  background-color: var(--scoreBoard_color);
+}
+.App .scoreboard .edit_name1{
+  left: -15px;
+  top: -50px;
+}
+.App .scoreboard .edit_name2{
+  right: -15px;
+  top: -50px;
 }

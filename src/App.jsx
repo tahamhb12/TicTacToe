@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Cell from "./Cell";
 import Winner from "./winner/winnerDeclaration";
 import { AnimatePresence } from "framer-motion";
+import player1 from "./player1.webp"
+import player2 from "./player2.webp"
 
 const App= () => {
 
@@ -182,6 +184,10 @@ if(start){
       ))}
     </div>
     <div className="scoreboard">
+      <img src={player1} alt="" />
+      <img src={player2} alt="" />
+      <button className="edit_name1"><i class="fa-solid fa-user-pen"></i></button>
+      <button className="edit_name2"><i class="fa-solid fa-user-pen"></i></button>
       <div className="player1">
         <div>X</div>
         <h2>Player 1</h2>
